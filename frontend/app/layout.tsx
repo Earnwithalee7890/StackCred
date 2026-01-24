@@ -16,8 +16,19 @@ const geistMono = Geist_Mono({
 import ClientProviders from "@/components/ClientProviders";
 
 export const metadata: Metadata = {
-  title: "StackCred",
-  description: "Decentralized Credentials on Stacks",
+  title: "StackCred | Decentralized Reputation on Bitcoin",
+  description: "Mint verified credentials for your skills and contributions on the Stacks blockchain. Secured by Bitcoin.",
+  keywords: ["Stacks", "Bitcoin", "Learn to Earn", "Credentials", "Web3", "Crypto"],
+  openGraph: {
+    title: "StackCred - Verify Your Skills",
+    description: "Decentralized reputation platform built on Stacks.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "StackCred",
+    description: "Mint verified credentials on Stacks.",
+  },
 };
 
 // ... imports ...
