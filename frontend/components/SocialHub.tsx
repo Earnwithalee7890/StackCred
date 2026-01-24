@@ -4,10 +4,10 @@ import React from "react";
 
 export default function SocialHub() {
     const socials = [
-        { name: "Twitter", url: "https://twitter.com/Earnwithalee", icon: "🐦", color: "hover:text-blue-400" },
+        { name: "Twitter", url: "https://twitter.com/aleeasghar78", icon: "🐦", color: "hover:text-blue-400" },
         { name: "GitHub", url: "https://github.com/Earnwithalee7890", icon: "🐙", color: "hover:text-white" },
         { name: "Project Repo", url: "https://github.com/Earnwithalee7890/StackCred", icon: "📚", color: "hover:text-orange-400" },
-        { name: "Talent App", url: "https://app.talentprotocol.com/", icon: "⭐", color: "hover:text-purple-400" },
+        { name: "Talent App", url: "https://talent.app/aleekhoso", icon: "⭐", color: "hover:text-purple-400" },
     ];
 
     return (
