@@ -1,8 +1,17 @@
-import Link from "next/link";
+"use client";
+
+import React from "react";
 import dynamic from "next/dynamic";
-import { BadgeCheck, Zap, Trophy, ArrowRight, Github, LayoutDashboard } from "lucide-react";
-import Leaderboard from "./Leaderboard";
+import { BadgeCheck, Zap, Trophy } from "lucide-react";
+
+// Components
+import Header from "./Header";
+import Footer from "./Footer";
 import SocialHub from "./SocialHub";
+import PlatformStats from "./PlatformStats";
+import AboutSection from "./AboutSection";
+import PoweredBy from "./PoweredBy";
+import Leaderboard from "./Leaderboard";
 
 const WalletConnect = dynamic(() => import("./WalletConnect"), { ssr: false });
 const GithubScorer = dynamic(() => import("./GithubScorer"), { ssr: false });
@@ -10,9 +19,6 @@ const GithubScorer = dynamic(() => import("./GithubScorer"), { ssr: false });
 export default function LandingPage() {
     return (
         <div className="min-h-screen bg-[#050505] text-white selection:bg-orange-500/30 overflow-hidden relative">
-            import Header from "./Header";
-
-            // ... inside component ...
             {/* Background Gradients */}
             <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-orange-600/20 blur-[120px]" />
             <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[120px]" />
@@ -21,20 +27,14 @@ export default function LandingPage() {
             <Header />
 
             {/* Hero Section */}
-
-            {/* Hero Section */}
             <main className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 pb-12">
-                <div className="flex max-w-5xl flex-col items-center text-center z-10">
+                <div className="flex max-w-5xl flex-col items-center text-center z-10 transition-all duration-700">
 
-                    <div className="animate-in fade-in slide-in-from-top-8 duration-700 mb-8 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-xs font-semibold text-orange-400 shadow-[0_0_20px_-5px_rgba(249,115,22,0.3)] backdrop-blur-md">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
-                        </span>
-                        Live for Talent App Challenge
+                    <div className="mb-8 animate-in fade-in slide-in-from-top-8 duration-700">
+                        <PoweredBy />
                     </div>
 
-                    <h1 className="animate-in fade-in zoom-in-95 duration-1000 delay-100 mb-8 text-6xl font-extrabold tracking-tight sm:text-8xl leading-tight">
+                    <h1 className="animate-in fade-in zoom-in-95 duration-1000 delay-100 mb-8 text-6xl font-extrabold tracking-tight sm:text-8xl leading-none">
                         Verified Credentials on <br />
                         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
                             Bitcoin & Stacks
@@ -46,20 +46,20 @@ export default function LandingPage() {
                         Turn your GitHub commits and hackathon wins into permanent <span className="text-white font-semibold">SIP-009 NFTs</span>.
                     </p>
 
-                    import PlatformStats from "./PlatformStats";
-
-                    // ... inside component ...
                     <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 flex w-full justify-center mb-12">
                         <GithubScorer />
                     </div>
 
-                    <div className="animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 mb-20 w-full flex justify-center">
+                    <div className="animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 mb-24 w-full flex justify-center">
                         <PlatformStats />
                     </div>
                 </div>
 
+                {/* About Section */}
+                <AboutSection />
+
                 {/* Features Grid */}
-                <div className="grid w-full max-w-6xl gap-6 sm:grid-cols-3 z-10">
+                <div className="grid w-full max-w-6xl gap-6 sm:grid-cols-3 z-10 mb-24">
                     {[
                         {
                             title: "On-Chain Identity",
@@ -93,19 +93,15 @@ export default function LandingPage() {
                     ))}
                 </div>
 
-                <div className="mt-24 w-full flex justify-center px-4 mb-24 flex-col items-center gap-12">
+                {/* Leaderboard & Community */}
+                <div className="w-full flex justify-center px-4 mb-12 flex-col items-center gap-16">
                     <Leaderboard />
                     <SocialHub />
                 </div>
             </main>
 
-            import Footer from "./Footer";
-
-        // ... inside component ...
-        </main>
-
-            {/* Footer */ }
-    <Footer />
-        </div >
+            {/* Footer */}
+            <Footer />
+        </div>
     );
 }
