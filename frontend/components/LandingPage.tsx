@@ -10,22 +10,17 @@ const GithubScorer = dynamic(() => import("./GithubScorer"), { ssr: false });
 export default function LandingPage() {
     return (
         <div className="min-h-screen bg-[#050505] text-white selection:bg-orange-500/30 overflow-hidden relative">
+            import Header from "./Header";
+
+            // ... inside component ...
             {/* Background Gradients */}
             <div className="absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-orange-600/20 blur-[120px]" />
             <div className="absolute bottom-[-20%] right-[-10%] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[120px]" />
 
             {/* Navigation */}
-            <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl">
-                <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-                    <div className="flex items-center gap-3 group">
-                        <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-orange-400 to-red-600 shadow-lg group-hover:shadow-orange-500/50 transition-all duration-500">
-                            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">StackCred</span>
-                    </div>
-                    <WalletConnect />
-                </div>
-            </nav>
+            <Header />
+
+            {/* Hero Section */}
 
             {/* Hero Section */}
             <main className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 pb-12">
