@@ -27,7 +27,7 @@ export default function LandingPage() {
             <Header />
 
             {/* Hero Section */}
-            <main className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-24 pb-12">
+            <main className="relative flex min-h-screen flex-col items-center justify-center px-4 sm:px-6 pt-24 pb-12">
                 <div className="flex max-w-5xl flex-col items-center text-center z-10 transition-all duration-700">
 
                     <div className="mb-8 animate-in fade-in slide-in-from-top-8 duration-700">
