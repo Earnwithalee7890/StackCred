@@ -99,10 +99,13 @@ export default function LandingPage() {
                 </div>
             </main>
 
-            {/* Footer */}
-            <footer className="w-full border-t border-white/5 bg-[#050505] py-8 text-center text-sm text-gray-600">
-                <p>Built for the Stacks Talent App Challenge</p>
-            </footer>
-        </div>
+            import Footer from "./Footer";
+
+        // ... inside component ...
+        </main>
+
+            {/* Footer */ }
+    <Footer />
+        </div >
     );
 }
