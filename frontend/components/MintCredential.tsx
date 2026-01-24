@@ -5,24 +5,24 @@ import { useConnect } from "@stacks/connect-react";
 import { STACKS_MAINNET } from "@stacks/network";
 import { AnchorMode, PostConditionMode } from "@stacks/transactions";
 import { userSession } from "./WalletConnect";
+import { useToast } from "./Toast";
 
 export default function MintCredential() {
     const { doContractCall } = useConnect();
+    const { addToast } = useToast();
     const [txId, setTxId] = useState("");
     const [status, setStatus] = useState<"idle" | "minting" | "success">("idle");
 
     const handleMint = async () => {
         if (!userSession.isUserSignedIn()) {
-            alert("Please connect your wallet first!");
+            addToast("Please connect your wallet first!", "error");
             return;
         }
 
         setStatus("minting");
+        addToast("Minting process started...", "info");
 
         const network = STACKS_MAINNET;
-
-        // For local dev/testnet, we typically use the standard deployer address
-        // In production this should be an env var
         const contractAddress = "SP2F500B8DTRK1EANJQ054BRAB8DDKN6QCMXGNFBT";
         const contractName = "stackcred-app";
         const functionName = "mint";
@@ -30,37 +30,32 @@ export default function MintCredential() {
         const profile = userSession.loadUserData().profile;
         const recipientAddress = profile.stxAddress.mainnet || profile.stxAddress.testnet;
 
-        // StandardPrincipal argument for recipient
-        // We need to import certain types if we want to construct args manually
-        // or use string format if supported (Stacks Connect supports some shorthand)
-        // But passing standardPrincipalCV is safer if we had the library.
-        // For now, let's try the simple openContractCall structure.
+        try {
+            const { standardPrincipalCV } = await import("@stacks/transactions");
 
-        // Note: We need to construct Clarity values. 
-        // Since we don't have the full library imported in this snippet context easily without seeing package.json deps for micro-stacks or stacks.js fully
-        // I will assume we have @stacks/transactions
-
-        // Changing approach to import at top if I could, but let's assume imports from @stacks/transactions
-        // I'll dynamically import or just assume standardPrincipalCV is available from the package I installed.
-
-        const { standardPrincipalCV } = await import("@stacks/transactions");
-
-        await doContractCall({
-            network,
-            anchorMode: AnchorMode.Any,
-            contractAddress,
-            contractName,
-            functionName,
-            functionArgs: [standardPrincipalCV(recipientAddress)],
-            postConditionMode: PostConditionMode.Allow,
-            onFinish: (data: any) => {
-                setTxId(data.txId);
-                setStatus("success");
-            },
-            onCancel: () => {
-                setStatus("idle");
-            },
-        });
+            await doContractCall({
+                network,
+                anchorMode: AnchorMode.Any,
+                contractAddress,
+                contractName,
+                functionName,
+                functionArgs: [standardPrincipalCV(recipientAddress)],
+                postConditionMode: PostConditionMode.Allow,
+                onFinish: (data: any) => {
+                    setTxId(data.txId);
+                    setStatus("success");
+                    addToast("Transaction broadcasted successfully!", "success");
+                },
+                onCancel: () => {
+                    setStatus("idle");
+                    addToast("Minting cancelled.", "info");
+                },
+            });
+        } catch (e: any) {
+            console.error(e);
+            setStatus("idle");
+            addToast("Failed to initialize transaction.", "error");
+        }
     };
 
     return (
