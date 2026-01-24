@@ -1,10 +1,8 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import { BadgeCheck, Zap, Trophy, ArrowRight, Github, LayoutDashboard } from "lucide-react";
 import Leaderboard from "./Leaderboard";
+import SocialHub from "./SocialHub";
 
 const WalletConnect = dynamic(() => import("./WalletConnect"), { ssr: false });
 const GithubScorer = dynamic(() => import("./GithubScorer"), { ssr: false });
