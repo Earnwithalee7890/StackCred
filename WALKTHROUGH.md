@@ -65,4 +65,6 @@ npm run dev
 
 ### 5. Deployment Configuration
 *   **Vercel Settings**: Configured "Root Directory" to `frontend` to resolve 404 errors.
-    ![Vercel Root Directory Settings](docs/images/vercel-settings.jpg)
+*   **Build Config**: Added `.npmrc` with `legacy-peer-deps=true` to resolve React version conflicts.
+*   **Framework Settings**: Ensure "Framework Preset" is set to `Next.js`.
+    ![Vercel Framework Settings](docs/images/vercel-framework.jpg)
