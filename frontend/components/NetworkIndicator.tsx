@@ -1,0 +1,25 @@
+"use client";
+
+import React, { useMemo } from "react";
+import { STACKS_MAINNET, STACKS_TESTNET } from "@stacks/network";
+
+interface NetworkIndicatorProps {
+    network?: string; // "mainnet" | "testnet"
+}
+
+export default function NetworkIndicator({ network = "mainnet" }: NetworkIndicatorProps) {
+    const isMainnet = network === "mainnet";
+
+    return (
+        <div className={`flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${isMainnet
+                ? "border-green-500/20 bg-green-500/10 text-green-400 hover:bg-green-500/20"
+                : "border-yellow-500/20 bg-yellow-500/10 text-yellow-400 hover:bg-yellow-500/20"
+            }`}>
+            <span className={`relative flex h-2 w-2`}>
+                <span className={`absolute inline-flex h-full w-full animate-ping rounded-full opacity-75 ${isMainnet ? "bg-green-400" : "bg-yellow-400"}`}></span>
+                <span className={`relative inline-flex h-2 w-2 rounded-full ${isMainnet ? "bg-green-500" : "bg-yellow-500"}`}></span>
+            </span>
+            <span className="uppercase tracking-wider">{isMainnet ? "Mainnet" : "Testnet"}</span>
+        </div>
+    );
+}
