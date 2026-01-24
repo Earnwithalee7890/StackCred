@@ -51,8 +51,15 @@ export default function LandingPage() {
                         Turn your GitHub commits and hackathon wins into permanent <span className="text-white font-semibold">SIP-009 NFTs</span>.
                     </p>
 
-                    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 flex w-full justify-center mb-20">
+                    import PlatformStats from "./PlatformStats";
+
+                    // ... inside component ...
+                    <div className="animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 flex w-full justify-center mb-12">
                         <GithubScorer />
+                    </div>
+
+                    <div className="animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500 mb-20 w-full flex justify-center">
+                        <PlatformStats />
                     </div>
                 </div>
 
