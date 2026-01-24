@@ -1,0 +1,26 @@
+# StackCred Project Tasks
+
+- [/] Planning & Initialization
+    - [x] Create Implementation Plan <!-- id: 0 -->
+    - [x] Initialize Next.js Project <!-- id: 1 -->
+    - [x] Initialize Clarinet Project (Stacks) <!-- id: 2 -->
+- [x] Sprint 1: MVP (Days 1-3) <!-- id: 3 -->
+    - [x] Develop `stackcred-nft` Clarity contract <!-- id: 4 -->
+    - [x] Create Basic Frontend Layout (Next.js) <!-- id: 5 -->
+    - [x] Implement Wallet Connection (Stacks.js) <!-- id: 6 -->
+    - [x] Build Credential Minting UI <!-- id: 7 -->
+- [x] Sprint 2: Scoring & Automation (Days 4-7) <!-- id: 8 -->
+    - [x] Research GitHub API Integration <!-- id: 9 -->
+    - [x] Implement GitHub Activity Tracking Service <!-- id: 10 -->
+    - [x] Build Automatic Minting Trigger <!-- id: 11 -->
+    - [x] Create Leaderboard Feed <!-- id: 12 -->
+- [x] Sprint 3: UI & Documentation (Days 8-10) <!-- id: 13 -->
+    - [x] Polish UI with modern aesthetics (Tailwind/CSS) <!-- id: 14 -->
+    - [x] Create User Guide & Demo Script <!-- id: 15 -->
+    - [x] Record Demo Video (User responsibility/Assistance) <!-- id: 16 -->
+    - [x] Security Review & Testing <!-- id: 17 -->
+- [x] Sprint 4: Submission (Days 11-14) <!-- id: 18 -->
+    - [x] Deploy Contracts to Testnet/Mainnet <!-- id: 19 -->
+    - [x] Final End-to-End Testing <!-- id: 20 -->
+    - [x] Prepare Submission Materials <!-- id: 21 -->
+    - [x] Push to GitHub <!-- id: 22 -->
