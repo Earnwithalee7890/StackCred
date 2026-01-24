@@ -48,7 +48,7 @@ describe("stackcred-nft contract tests", () => {
 
   it("can transfer a token", () => {
     // 1. Mint token 1 to wallet1
-    simnet.callPublicFn("stackcred-nft", "mint", [Cl.standardPrincipal(wallet1)], deployer);
+    simnet.callPublicFn("stackcred-app", "mint", [Cl.standardPrincipal(wallet1)], deployer);
 
     // 2. Transfer from wallet1 to wallet2
     const transferResponse = simnet.callPublicFn(
@@ -76,7 +76,7 @@ describe("stackcred-nft contract tests", () => {
 
   it("cannot transfer if not owner", () => {
     // Mint token 1 to wallet1
-    simnet.callPublicFn("stackcred-nft", "mint", [Cl.standardPrincipal(wallet1)], deployer);
+    simnet.callPublicFn("stackcred-app", "mint", [Cl.standardPrincipal(wallet1)], deployer);
 
     // Try to transfer from wallet1 using wallet2's signature
     const transferResponse = simnet.callPublicFn(

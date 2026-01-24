@@ -23,8 +23,8 @@ export default function MintCredential() {
 
         // For local dev/testnet, we typically use the standard deployer address
         // In production this should be an env var
-        const contractAddress = "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM";
-        const contractName = "stackcred-nft";
+        const contractAddress = "SP2F500B8DTRK1EANJQ054BRAB8DDKN6QCMXGNFBT";
+        const contractName = "stackcred-app";
         const functionName = "mint";
 
         const profile = userSession.loadUserData().profile;
