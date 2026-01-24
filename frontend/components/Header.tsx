@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { useConnect } from "@stacks/connect-react";
-import { userSession } from "./WalletConnect"; // Adjust import path if needed
+import { userSession } from "./WalletConnect";
+import NetworkIndicator from "./NetworkIndicator";
 
 export default function Header() {
     const { doOpenAuth } = useConnect();
@@ -15,7 +16,6 @@ export default function Header() {
         };
         window.addEventListener("scroll", handleScroll);
 
-        // Check auth status
         if (userSession.isUserSignedIn()) {
             setIsSignedIn(true);
         }
@@ -42,13 +42,14 @@ export default function Header() {
                 <div className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-orange-500 to-red-600"></div>
                     <span className="text-xl font-bold text-white tracking-tight">StackCred</span>
+                    <NetworkIndicator />
                 </div>
 
                 <nav className="hidden md:block">
                     <ul className="flex items-center gap-8 text-sm font-medium text-gray-300">
-                        <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Leaderboard</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#leaderboard" className="hover:text-white transition-colors">Leaderboard</a></li>
+                        <li><a href="https://docs.stacks.co" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Docs</a></li>
                     </ul>
                 </nav>
 
