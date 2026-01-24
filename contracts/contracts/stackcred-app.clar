@@ -3,8 +3,8 @@
 ;; A SIP-009 compliant NFT contract for StackCred credentials
 
 ;; SIP-009 Trait Definition
-(use-trait nft-trait 'SP2F500B8DTRK1EANJQ054BRAB8DDKN6QCMXGNFBT.nft-trait.nft-trait)
-(impl-trait .nft-trait.nft-trait)
+(use-trait stackcred-trait .stackcred-trait.stackcred-trait)
+(impl-trait .stackcred-trait.stackcred-trait)
 
 ;; Constants
 (define-constant contract-owner tx-sender)
