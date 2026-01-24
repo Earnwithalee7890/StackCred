@@ -1,0 +1,49 @@
+"use client";
+
+import React from "react";
+
+interface SkeletonProps {
+    className?: string;
+    count?: number;
+}
+
+export default function Skeleton({ className, count = 1 }: SkeletonProps) {
+    return (
+        <>
+            {Array(count)
+                .fill(0)
+                .map((_, i) => (
+                    <div
+                        key={i}
+                        className={`animate-pulse rounded-md bg-white/5 ${className}`}
+                    />
+                ))}
+        </>
+    );
+}
+
+export function LeaderboardSkeleton() {
+    return (
+        <div className="w-full max-w-3xl rounded-3xl border border-white/5 bg-black/40 p-1 backdrop-blur-xl">
+            <div className="rounded-2xl bg-white/[0.02] p-8 border border-white/5">
+                <div className="mb-8 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                        <Skeleton className="h-10 w-10 rounded-xl" />
+                        <div className="space-y-2">
+                            <Skeleton className="h-6 w-32" />
+                            <Skeleton className="h-3 w-48" />
+                        </div>
+                    </div>
+                    <Skeleton className="h-6 w-24 rounded-full" />
+                </div>
+
+                <div className="space-y-4">
+                    <Skeleton className="h-4 w-full" />
+                    {[1, 2, 3, 4, 5].map((i) => (
+                        <Skeleton key={i} className="h-16 w-full rounded-xl" />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
