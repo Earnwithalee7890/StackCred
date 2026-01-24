@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+build/
+.clar/
+.clarinet/
+contracts/.clarinet/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+*.log
+.DS_Store
