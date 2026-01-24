@@ -91,8 +91,9 @@ export default function LandingPage() {
                     ))}
                 </div>
 
-                <div className="mt-24 w-full flex justify-center px-4 mb-24">
+                <div className="mt-24 w-full flex justify-center px-4 mb-24 flex-col items-center gap-12">
                     <Leaderboard />
+                    <SocialHub />
                 </div>
             </main>
 
