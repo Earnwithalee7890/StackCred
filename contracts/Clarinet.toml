@@ -12,7 +12,7 @@ epoch = 2.5
 
 [contracts.stackcred-app]
 path = 'contracts/stackcred-app.clar'
-clarity_version = 3
+clarity_version = 2
 epoch = 'latest'
 [repl.analysis]
 passes = ['check_checker']

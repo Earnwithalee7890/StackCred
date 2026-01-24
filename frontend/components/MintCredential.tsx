@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useConnect } from "@stacks/connect-react";
-import { STACKS_TESTNET } from "@stacks/network";
+import { STACKS_MAINNET } from "@stacks/network";
 import { AnchorMode, PostConditionMode } from "@stacks/transactions";
 import { userSession } from "./WalletConnect";
 
@@ -19,7 +19,7 @@ export default function MintCredential() {
 
         setStatus("minting");
 
-        const network = STACKS_TESTNET;
+        const network = STACKS_MAINNET;
 
         // For local dev/testnet, we typically use the standard deployer address
         // In production this should be an env var
@@ -28,7 +28,7 @@ export default function MintCredential() {
         const functionName = "mint";
 
         const profile = userSession.loadUserData().profile;
-        const recipientAddress = profile.stxAddress.testnet || profile.stxAddress.mainnet;
+        const recipientAddress = profile.stxAddress.mainnet || profile.stxAddress.testnet;
 
         // StandardPrincipal argument for recipient
         // We need to import certain types if we want to construct args manually
@@ -69,7 +69,7 @@ export default function MintCredential() {
                 <div className="rounded-lg border border-green-500/20 bg-green-500/10 p-4 text-center">
                     <p className="mb-2 text-lg font-bold text-green-400">Minted Successfully! 🎉</p>
                     <a
-                        href={`https://explorer.stacks.co/txid/${txId}?chain=testnet`}
+                        href={`https://explorer.stacks.co/txid/${txId}?chain=mainnet`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-green-300 hover:underline"
