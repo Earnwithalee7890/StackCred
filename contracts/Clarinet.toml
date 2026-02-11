@@ -14,6 +14,43 @@ epoch = 2.5
 path = 'contracts/stackcred-app.clar'
 clarity_version = 2
 epoch = 'latest'
+
+[contracts.stackcred-token]
+path = 'contracts/stackcred-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+epoch = 2.5
+
+[contracts.daily-metrics]
+path = 'contracts/daily-metrics.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.audit-log]
+path = 'contracts/audit-log.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.operation-control]
+path = 'contracts/operation-control.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.system-greeting]
+path = 'contracts/system-greeting.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.staking-math]
+path = 'contracts/staking-math.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.profile-storage]
+path = 'contracts/profile-storage.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
 passes = ['check_checker']
 
