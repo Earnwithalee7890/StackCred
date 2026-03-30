@@ -16,21 +16,26 @@ const geistMono = Geist_Mono({
 import ClientProviders from "@/components/ClientProviders";
 
 export const metadata: Metadata = {
-  title: "StackCred | Decentralized Reputation on Bitcoin",
-  description: "Mint verified credentials for your skills and contributions on the Stacks blockchain. Secured by Bitcoin.",
-  keywords: ["Stacks", "Bitcoin", "Learn to Earn", "Credentials", "Web3", "Crypto"],
+  title: "StackCred | Stacks Builder Ranking April 2026",
+  description: "Official entry for Stacks April 2026. Mint verified credentials for your skills and contributions on the Stacks blockchain. Secured by Bitcoin.",
+  keywords: ["Stacks", "Bitcoin", "Learn to Earn", "Credentials", "Web3", "Crypto", "April 2026"],
   other: {
     "talentapp:project_verification": "b95f6765cff4b1f08ee5abb6094cf39e6893b0fe20a6bd82589af05bc5383dd25179259621f0e98aec1a089438a21e6731cfb9e58b322a72aacdbc1f6f4bb70d",
+    "talentapp:event": "Stacks Builder Ranking April 2026",
+    "talentapp:project_id": "stackcred-stacks-april-2026",
+    "talentapp:category": "Stacks Ecosystem",
   },
   openGraph: {
-    title: "StackCred - Verify Your Skills",
-    description: "Decentralized reputation platform built on Stacks.",
+    title: "StackCred - Stacks Builder Ranking April 2026",
+    description: "Mint verified credentials for your skills and contributions on the Stacks blockchain. Secured by Bitcoin.",
     type: "website",
+    images: ["/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "StackCred",
-    description: "Mint verified credentials on Stacks.",
+    title: "StackCred | Stacks April 2026",
+    description: "Official entry for Stacks April 2026. Mint verified credentials on Stacks.",
+    images: ["/logo.png"],
   },
 };
 
