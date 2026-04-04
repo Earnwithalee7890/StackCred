@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useConnect } from "@stacks/connect-react";
 import { userSession } from "./WalletConnect";
 import NetworkIndicator from "./NetworkIndicator";
+import EventCheckIn from "./EventCheckIn";
 
 export default function Header() {
     const { doOpenAuth } = useConnect();
@@ -54,14 +55,7 @@ export default function Header() {
                 </nav>
 
                 <div className="flex items-center gap-3">
-                    {isSignedIn && (
-                        <button
-                            className="hidden sm:block rounded-full bg-orange-600/20 px-4 py-2 text-xs font-bold text-orange-400 hover:bg-orange-600/30 transition-all border border-orange-500/20 active:scale-95"
-                            onClick={() => alert("Check-in successful! On-chain verification pending.")}
-                        >
-                            APR CHECK-IN
-                        </button>
-                    )}
+                    {isSignedIn && <EventCheckIn />}
                     <button
                         onClick={handleConnect}
                         className="rounded-full bg-white/10 px-6 py-2 text-sm font-semibold text-white transition-all hover:bg-white/20 hover:scale-105 active:scale-95 ring-1 ring-white/10"
