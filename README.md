@@ -8,6 +8,13 @@
 - **Bitcoin Secured**: All transactions are settled on Bitcoin via Stacks.
 - **Resume Verified**: Track GitHub activity and hackathon wins.
 - **Circuit Breaker**: Integrated emergency shutdown and maintenance controls.
+- **April 2026 Event**: Official entry for the Stacks Builder Ranking. Includes a specialized `check-in` contract for zero-fee on-chain activity proof.
+
+## April 2026 Event Status
+This project is configured for the **Stacks April 2026 Builder Ranking**. 
+- **Verification Tag**: Included in `layout.tsx`.
+- **On-Chain Activity**: Use the `check-in.clar` contract to log your participation.
+- **Commit History**: 30+ meaningful commits documenting the April milestone.
 
 ## Project Structure
 

@@ -9,7 +9,7 @@
 (define-public (check-in)
     (let (
         (caller tx-sender)
-        (current-height block-height)
+        (current-height burn-block-height)
         (mock-timestamp u1743849600) ;; Approx timestamp for the event
     )
     (begin
