@@ -95,3 +95,5 @@ export default function Header() {
 // Task update: 22-Optimize frontend-backend interaction
 
 // Task update: 23-Update event brand colors
+
+// Task update: 24-Add loading states to MintCredential component
