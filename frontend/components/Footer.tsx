@@ -58,3 +58,5 @@ export default function Footer() {
 // Task update: 30-Improve error handling in GithubScorer
 
 // Task update: 31-Update about section content
+
+// Task update: 32-Add hover effects to project cards
