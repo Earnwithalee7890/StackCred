@@ -53,3 +53,5 @@ Contracts are deployed to Stacks.
 <!-- update: 45-Improve wallet connection persistence -->
 
 <!-- update: 46-Add SEO meta tags to LandingPage -->
+
+<!-- update: 47-Refactor event info data retrieval -->
