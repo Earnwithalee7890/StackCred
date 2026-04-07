@@ -93,3 +93,5 @@ export default function Header() {
 // Task update: 21-Add check for already checked-in status
 
 // Task update: 22-Optimize frontend-backend interaction
+
+// Task update: 23-Update event brand colors
