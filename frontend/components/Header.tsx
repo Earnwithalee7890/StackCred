@@ -81,3 +81,5 @@ export default function Header() {
 // Task update: 15-Improve footer layout for mobile
 
 // Task update: 16-Add social metadata for better SEO
+
+// Task update: 17-Update package description in package.json
