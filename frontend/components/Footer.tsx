@@ -72,3 +72,5 @@ export default function Footer() {
 // Task update: 37-Update contract constants
 
 // Task update: 38-Add more descriptive console logs for dev
+
+// Task update: 39-Refactor API endpoints configuration
