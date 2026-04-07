@@ -54,3 +54,5 @@ export default function Footer() {
 // Task update: 28-Update deployment instructions
 
 // Task update: 29-Add unit tests for check-in contract placeholder
+
+// Task update: 30-Improve error handling in GithubScorer
