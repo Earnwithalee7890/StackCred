@@ -45,3 +45,5 @@ Contracts are deployed to Stacks.
 <!-- update: 41-Add responsive navigation for tablet devices -->
 
 <!-- update: 42-Update license information in footer -->
+
+<!-- update: 43-Standardize code formatting in components -->
