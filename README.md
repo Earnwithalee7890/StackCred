@@ -47,3 +47,5 @@ Contracts are deployed to Stacks.
 <!-- update: 42-Update license information in footer -->
 
 <!-- update: 43-Standardize code formatting in components -->
+
+<!-- update: 44-Add more project stats to PlatformStats -->
