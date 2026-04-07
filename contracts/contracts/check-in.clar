@@ -46,3 +46,5 @@
 ;; Task update: 0-Update contract documentation
 
 ;; Task update: 1-Refactor check-in logic for better readability
+
+;; Task update: 2-Add comments to get-event-info function
