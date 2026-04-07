@@ -73,3 +73,5 @@ export default function Header() {
 // Task update: 11-Add toast notifications for wallet errors
 
 // Task update: 12-Fix typo in PlatformStats.tsx
+
+// Task update: 13-Optimize ClientProviders context loading
