@@ -44,3 +44,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+// Task update: 25-Improve network indicator responsiveness
