@@ -39,3 +39,5 @@ Contracts are deployed to Stacks.
 - **Main App**: `stackcred-app`
 - **Governance**: `operation-control`
 - **Token**: `stackcred-token`
+
+<!-- update: 40-Improve modal accessibility for screen readers -->
