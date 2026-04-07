@@ -54,3 +54,5 @@
 ;; Task update: 4-Update mock-timestamp for more accuracy
 
 ;; Task update: 5-Add read-only function for validation
+
+;; Task update: 6-Tweak leaderboard component styling
