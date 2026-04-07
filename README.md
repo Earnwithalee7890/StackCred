@@ -49,3 +49,5 @@ Contracts are deployed to Stacks.
 <!-- update: 43-Standardize code formatting in components -->
 
 <!-- update: 44-Add more project stats to PlatformStats -->
+
+<!-- update: 45-Improve wallet connection persistence -->
