@@ -75,3 +75,5 @@ export default function Header() {
 // Task update: 12-Fix typo in PlatformStats.tsx
 
 // Task update: 13-Optimize ClientProviders context loading
+
+// Task update: 14-Add error boundary to main app
