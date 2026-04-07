@@ -50,3 +50,5 @@
 ;; Task update: 2-Add comments to get-event-info function
 
 ;; Task update: 3-Improve event data structure in Clarity
+
+;; Task update: 4-Update mock-timestamp for more accuracy
