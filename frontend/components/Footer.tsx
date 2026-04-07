@@ -50,3 +50,5 @@ export default function Footer() {
 // Task update: 26-Add skeleton screens for better UX
 
 // Task update: 27-Refactor SocialHub constants
+
+// Task update: 28-Update deployment instructions
