@@ -71,3 +71,5 @@ export default function Header() {
 // Task update: 10-Update UI colors for better contrast
 
 // Task update: 11-Add toast notifications for wallet errors
+
+// Task update: 12-Fix typo in PlatformStats.tsx
