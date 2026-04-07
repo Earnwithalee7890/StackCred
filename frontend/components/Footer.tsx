@@ -60,3 +60,5 @@ export default function Footer() {
 // Task update: 31-Update about section content
 
 // Task update: 32-Add hover effects to project cards
+
+// Task update: 33-Optimize image assets path naming
