@@ -83,3 +83,5 @@ export default function Header() {
 // Task update: 16-Add social metadata for better SEO
 
 // Task update: 17-Update package description in package.json
+
+// Task update: 18-Refactor Clarinet.toml formatting
