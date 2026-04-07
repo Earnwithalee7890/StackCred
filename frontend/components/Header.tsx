@@ -87,3 +87,5 @@ export default function Header() {
 // Task update: 18-Refactor Clarinet.toml formatting
 
 // Task update: 19-Add developer instructions to README
+
+// Task update: 20-Improve contract event logging
