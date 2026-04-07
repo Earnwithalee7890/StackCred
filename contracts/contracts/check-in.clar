@@ -58,3 +58,5 @@
 ;; Task update: 6-Tweak leaderboard component styling
 
 ;; Task update: 7-Improve button accessibility
+
+;; Task update: 8-Add JSDoc to WalletConnect component
