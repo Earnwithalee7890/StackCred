@@ -55,3 +55,5 @@ Contracts are deployed to Stacks.
 <!-- update: 46-Add SEO meta tags to LandingPage -->
 
 <!-- update: 47-Refactor event info data retrieval -->
+
+<!-- update: 48-Update walkthrough guide with new features -->
