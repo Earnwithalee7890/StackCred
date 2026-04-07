@@ -64,3 +64,5 @@ export default function Footer() {
 // Task update: 33-Optimize image assets path naming
 
 // Task update: 34-Refactor theme provider logic
+
+// Task update: 35-Add prop types to Toast component
