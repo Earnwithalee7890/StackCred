@@ -51,3 +51,5 @@ Contracts are deployed to Stacks.
 <!-- update: 44-Add more project stats to PlatformStats -->
 
 <!-- update: 45-Improve wallet connection persistence -->
+
+<!-- update: 46-Add SEO meta tags to LandingPage -->
