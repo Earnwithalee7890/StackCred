@@ -68,3 +68,5 @@ export default function Footer() {
 // Task update: 35-Add prop types to Toast component
 
 // Task update: 36-Improve form validation for email field
+
+// Task update: 37-Update contract constants
