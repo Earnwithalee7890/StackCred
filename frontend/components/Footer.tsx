@@ -70,3 +70,5 @@ export default function Footer() {
 // Task update: 36-Improve form validation for email field
 
 // Task update: 37-Update contract constants
+
+// Task update: 38-Add more descriptive console logs for dev
