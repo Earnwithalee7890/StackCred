@@ -52,3 +52,5 @@ export default function Footer() {
 // Task update: 27-Refactor SocialHub constants
 
 // Task update: 28-Update deployment instructions
+
+// Task update: 29-Add unit tests for check-in contract placeholder
