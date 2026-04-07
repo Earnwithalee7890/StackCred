@@ -66,3 +66,5 @@ export default function Footer() {
 // Task update: 34-Refactor theme provider logic
 
 // Task update: 35-Add prop types to Toast component
+
+// Task update: 36-Improve form validation for email field
