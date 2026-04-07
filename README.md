@@ -41,3 +41,5 @@ Contracts are deployed to Stacks.
 - **Token**: `stackcred-token`
 
 <!-- update: 40-Improve modal accessibility for screen readers -->
+
+<!-- update: 41-Add responsive navigation for tablet devices -->
