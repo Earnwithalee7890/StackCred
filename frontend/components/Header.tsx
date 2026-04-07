@@ -89,3 +89,5 @@ export default function Header() {
 // Task update: 19-Add developer instructions to README
 
 // Task update: 20-Improve contract event logging
+
+// Task update: 21-Add check for already checked-in status
