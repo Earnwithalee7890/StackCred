@@ -57,3 +57,5 @@ Contracts are deployed to Stacks.
 <!-- update: 47-Refactor event info data retrieval -->
 
 <!-- update: 48-Update walkthrough guide with new features -->
+
+<!-- update: 49-Finalize project structure for Stacks April Event -->
