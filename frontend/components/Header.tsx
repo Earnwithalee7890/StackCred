@@ -85,3 +85,5 @@ export default function Header() {
 // Task update: 17-Update package description in package.json
 
 // Task update: 18-Refactor Clarinet.toml formatting
+
+// Task update: 19-Add developer instructions to README
