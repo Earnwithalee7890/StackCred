@@ -67,3 +67,5 @@ export default function Header() {
         </header>
     );
 }
+
+// Task update: 10-Update UI colors for better contrast
