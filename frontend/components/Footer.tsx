@@ -46,3 +46,5 @@ export default function Footer() {
 }
 
 // Task update: 25-Improve network indicator responsiveness
+
+// Task update: 26-Add skeleton screens for better UX
