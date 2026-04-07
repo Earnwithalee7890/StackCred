@@ -43,3 +43,5 @@ Contracts are deployed to Stacks.
 <!-- update: 40-Improve modal accessibility for screen readers -->
 
 <!-- update: 41-Add responsive navigation for tablet devices -->
+
+<!-- update: 42-Update license information in footer -->
