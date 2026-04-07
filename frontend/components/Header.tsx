@@ -79,3 +79,5 @@ export default function Header() {
 // Task update: 14-Add error boundary to main app
 
 // Task update: 15-Improve footer layout for mobile
+
+// Task update: 16-Add social metadata for better SEO
