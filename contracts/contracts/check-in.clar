@@ -48,3 +48,5 @@
 ;; Task update: 1-Refactor check-in logic for better readability
 
 ;; Task update: 2-Add comments to get-event-info function
+
+;; Task update: 3-Improve event data structure in Clarity
