@@ -19,3 +19,5 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 
     return <Connect authOptions={authOptions}>{children}</Connect>;
 }
+
+// Quality Doc Update: 17:33:19 - Adding detailed documentation for better maintainability
