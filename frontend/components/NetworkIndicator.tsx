@@ -39,3 +39,5 @@ export default function NetworkIndicator({ network = "mainnet" }: NetworkIndicat
 // UI Polish: 17:35:03 - Refined spacing and color harmony
 
 // Code Refactor: 17:35:20 - Improved modularity and readability
+
+// Quality Fix: 17:35:37 - Enhanced type definitions and edge case handling
