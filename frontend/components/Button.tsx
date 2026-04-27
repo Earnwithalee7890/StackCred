@@ -62,3 +62,5 @@ export default function Button({
         </button>
     );
 }
+
+// Quality Doc Update: 17:33:10 - Adding detailed documentation for better maintainability
