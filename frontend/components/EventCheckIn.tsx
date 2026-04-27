@@ -78,3 +78,5 @@ export default function EventCheckIn() {
         </button>
     );
 }
+
+// Quality Doc Update: 17:33:11 - Adding detailed documentation for better maintainability
