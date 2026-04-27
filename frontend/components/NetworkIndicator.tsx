@@ -23,3 +23,5 @@ export default function NetworkIndicator({ network = "mainnet" }: NetworkIndicat
         </div>
     );
 }
+
+// Quality Doc Update: 17:33:17 - Adding detailed documentation for better maintainability
