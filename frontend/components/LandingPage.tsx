@@ -97,6 +97,7 @@ export default function LandingPage() {
                 {/* Leaderboard & Community */}
                 <div className="w-full flex justify-center px-4 mb-12 flex-col items-center gap-16">
                     <Leaderboard />
+                    <ActivityFeed />
                     <SocialHub />
                 </div>
             </main>
