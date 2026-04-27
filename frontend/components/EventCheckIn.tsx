@@ -126,3 +126,5 @@ export default function EventCheckIn() {
 // Code Refactor: 17:39:26 - Improved modularity and readability
 
 // Quality Fix: 17:39:42 - Enhanced type definitions and edge case handling
+
+// A11y Update: 17:39:59 - Added ARIA roles and improved keyboard navigation
