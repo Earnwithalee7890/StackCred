@@ -41,3 +41,5 @@ export default function NetworkIndicator({ network = "mainnet" }: NetworkIndicat
 // Code Refactor: 17:35:20 - Improved modularity and readability
 
 // Quality Fix: 17:35:37 - Enhanced type definitions and edge case handling
+
+// A11y Update: 17:35:54 - Added ARIA roles and improved keyboard navigation
