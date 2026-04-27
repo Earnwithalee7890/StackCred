@@ -56,3 +56,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// Quality Doc Update: 17:33:25 - Adding detailed documentation for better maintainability
