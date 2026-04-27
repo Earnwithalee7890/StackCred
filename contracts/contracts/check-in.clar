@@ -5,6 +5,12 @@
 ;; Define the check-ins map: maps user principal to a block height
 (define-map check-ins { user: principal } { height: uint, timestamp: uint })
 
+;; Constants
+(define-constant CONTRACT-OWNER tx-sender)
+(define-constant ERR-NOT-AUTHORIZED (err u100))
+(define-constant ERR-ALREADY-CHECKED-IN (err u101))
+(define-constant ERR-INVALID-HEIGHT (err u102))
+
 ;; Event data for check-in
 (define-public (check-in)
     (let (
