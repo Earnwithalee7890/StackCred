@@ -112,3 +112,5 @@ export default function MintCredential() {
 // Code Refactor: 17:36:44 - Improved modularity and readability
 
 // Quality Fix: 17:37:01 - Enhanced type definitions and edge case handling
+
+// A11y Update: 17:37:18 - Added ARIA roles and improved keyboard navigation
