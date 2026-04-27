@@ -17,8 +17,15 @@
         (caller tx-sender)
         (current-height burn-block-height)
         (mock-timestamp u1743849600) ;; Approx timestamp for the event
+        (existing-check-in (map-get? check-ins { user: caller }))
     )
     (begin
+        ;; Ensure user hasn't checked in already
+        (asserts! (is-none existing-check-in) ERR-ALREADY-CHECKED-IN)
+        
+        ;; Ensure height is valid
+        (asserts! (> current-height u0) ERR-INVALID-HEIGHT)
+
         ;; Log the check-in event to the blockchain
         (print { 
             event: "stacks-april-check-in", 
