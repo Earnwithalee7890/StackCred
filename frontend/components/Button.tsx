@@ -2,12 +2,26 @@
 
 import React from "react";
 
+/**
+ * Props for the Button component.
+ * @interface ButtonProps
+ * @extends {React.ButtonHTMLAttributes<HTMLButtonElement>}
+ */
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    /** The visual style variant of the button */
     variant?: "primary" | "secondary" | "ghost" | "outline";
+    /** The size of the button */
     size?: "sm" | "md" | "lg";
+    /** Whether the button is in a loading state */
     isLoading?: boolean;
 }
 
+/**
+ * A reusable, highly customizable button component with built-in loading state and variants.
+ * 
+ * @param {ButtonProps} props - The props for the button.
+ * @returns {JSX.Element} The rendered button component.
+ */
 export default function Button({
     className = "",
     variant = "primary",
