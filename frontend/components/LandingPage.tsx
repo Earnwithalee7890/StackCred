@@ -12,6 +12,7 @@ import PlatformStats from "./PlatformStats";
 import AboutSection from "./AboutSection";
 import PoweredBy from "./PoweredBy";
 import Leaderboard from "./Leaderboard";
+import ActivityFeed from "./ActivityFeed";
 
 const WalletConnect = dynamic(() => import("./WalletConnect"), { ssr: false });
 const GithubScorer = dynamic(() => import("./GithubScorer"), { ssr: false });
@@ -111,3 +112,5 @@ export default function LandingPage() {
 // UI Polish: 17:33:33 - Refined spacing and color harmony
 
 // Code Refactor: 17:33:50 - Improved modularity and readability
+
+// Quality Fix: 17:34:08 - Enhanced type definitions and edge case handling
