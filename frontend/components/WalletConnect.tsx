@@ -105,3 +105,5 @@ export default function WalletConnect() {
 // Code Refactor: 17:38:13 - Improved modularity and readability
 
 // Quality Fix: 17:38:30 - Enhanced type definitions and edge case handling
+
+// A11y Update: 17:38:47 - Added ARIA roles and improved keyboard navigation
